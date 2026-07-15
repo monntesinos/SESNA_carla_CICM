@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto-CICM</title>
+</head>
+<header>
+    <div class="container">
+        <p class="logo">sna</p>
+        <nav>
+            <a href="">Acerca del cicm</a>
+            <a href="">Consulta geográfica</a>
+            <a href="">Consulta interactiva</a>
+            <a href="">Blog</a>
+            <a href="">Preguntas frecuentes</a>
+            <a href="">Contacto</a>
+        </nav>
+    </div>
+</header>
+
+<main id="seccion-contacto">
+    <section id="banner-contacto">
+        <div class="banner-contenido">
+            <h1>CONTÁCTANOS</h1>
+        </div>
+    </section>
+
+    <div id="contenedor-formulario-contacto" class="container">
+        
+        <article id="info-invitacion">
+            <h2>¿Tienes alguna duda? ¡Comparte tu experiencia en el CICM!</h2>
+            <hr id="separador-contacto">
+            <p>Sólo tienes que llenar el siguiente formulario y escribirnos tu pregunta, comentario o sugerencia, con gusto la leeremos y te responderemos a la brevedad.</p>
+        </article>
+        <form id="form-contacto" action="mailto:TU_CORREO_AQUI@DOMINIO.COM" method="POST" enctype="text/plain">
+            
+            <div class="fila-inputs">
+                <div class="grupo-input">
+                    <label for="input-nombre" class="sr-only">Nombre</label>
+                    <input type="text" id="input-nombre" name="nombre" placeholder="Nombre" required>
+                </div>
+                
+                <div class="grupo-input">
+                    <label for="input-correo" class="sr-only">Correo</label>
+                    <input type="email" id="input-correo" name="correo" placeholder="Correo" required>
+                </div>
+            </div>
+
+            <div class="grupo-input">
+                <label for="input-asunto" class="sr-only">Asunto</label>
+                <input type="text" id="input-asunto" name="asunto" placeholder="Asunto" required>
+            </div>
+
+            <div class="grupo-input">
+                <label for="txt-mensaje" class="sr-only">Mensaje</label>
+                <textarea id="txt-mensaje" name="mensaje" placeholder="Mensaje" rows="6" required></textarea>
+            </div>
+
+            </form>
+
+    </div>
+</main>

@@ -1,0 +1,176 @@
+/* ============================================================
+   ESTILOS DE ACERCA DE
+   Menú de pestañas (Qué es/Objetivo/Misión/Visión), carrusel
+   de Antecedentes/Origen/Beneficios y menú de Ejes del PNA.
+   ============================================================ */
+
+.eyebrow {
+	color: var(--color-secundario);
+	font-size: var(--texto-xs);
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	margin-bottom: 0.35rem;
+}
+
+.subtitulo-seccion {
+	margin-bottom: var(--espacio-md);
+}
+
+/* Menú de pestañas: Qué es / Objetivo / Misión / Visión */
+.menu-pestanas {
+	display: flex;
+	flex-wrap: wrap;
+	gap: var(--espacio-xs);
+	margin: var(--espacio-sm) 0 var(--espacio-md);
+	border-bottom: 1px solid var(--color-borde);
+}
+
+.pestana-boton {
+	font-family: var(--fuente-principal);
+	font-size: var(--texto-sm);
+	font-weight: 600;
+	color: var(--color-texto-claro);
+	background: none;
+	border: none;
+	border-bottom: 3px solid transparent;
+	padding: 0.75rem 0.25rem;
+	cursor: pointer;
+	transition: color var(--transicion), border-color var(--transicion);
+}
+
+.pestana-boton + .pestana-boton {
+	margin-left: var(--espacio-md);
+}
+
+.pestana-boton:hover {
+	color: var(--color-primario);
+}
+
+.pestana-boton.activo {
+	color: var(--color-primario);
+	border-bottom-color: var(--color-primario);
+}
+
+.pestana-panel {
+	display: none;
+}
+
+.pestana-panel.activo {
+	display: block;
+}
+
+/* Carrusel de Antecedentes / Origen / Beneficios */
+.carousel-container {
+	position: relative;
+}
+
+.carousel-track {
+	position: relative;
+	min-height: 260px;
+}
+
+.carousel-slide {
+	display: none;
+	background-color: var(--color-fondo-blanco);
+	border-radius: var(--radio-borde);
+	padding: var(--espacio-md);
+	box-shadow: var(--sombra-tarjeta);
+}
+
+.carousel-slide.activo {
+	display: block;
+}
+
+.carousel-controles {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: var(--espacio-md);
+	margin-top: var(--espacio-md);
+}
+
+.carousel-control {
+	background-color: var(--color-primario);
+	color: var(--color-blanco);
+	border: none;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	font-size: var(--texto-lg);
+	cursor: pointer;
+	transition: background-color var(--transicion);
+}
+
+.carousel-control:hover {
+	background-color: var(--color-primario-oscuro);
+}
+
+.carousel-indicators {
+	display: flex;
+	gap: var(--espacio-xs);
+}
+
+.carousel-indicators .indicador {
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	background-color: var(--color-borde);
+	cursor: pointer;
+	transition: background-color var(--transicion);
+}
+
+.carousel-indicators .indicador.activo {
+	background-color: var(--color-primario);
+}
+
+/* Menú de Ejes del PNA */
+.menu-ejes {
+	display: flex;
+	gap: var(--espacio-sm);
+	margin: var(--espacio-md) 0;
+}
+
+.eje-boton {
+	width: 56px;
+	height: 56px;
+	border-radius: 50%;
+	border: none;
+	color: var(--color-blanco);
+	font-size: var(--texto-xl);
+	font-weight: 700;
+	cursor: pointer;
+	opacity: 0.55;
+	transition: opacity var(--transicion), transform var(--transicion);
+}
+
+.eje-boton:hover {
+	transform: translateY(-2px);
+}
+
+.eje-boton.activo {
+	opacity: 1;
+}
+
+/* Colores propios de cada eje, dentro de la gama guinda */
+.eje-boton.eje-1 { background-color: #7A1F3D; }
+.eje-boton.eje-2 { background-color: #A94464; }
+.eje-boton.eje-3 { background-color: #C97B93; }
+.eje-boton.eje-4 { background-color: #4A1428; }
+
+.eje-panel {
+	display: none;
+	background-color: var(--color-fondo-alterno);
+	border-left: 5px solid var(--color-primario);
+	border-radius: var(--radio-borde);
+	padding: var(--espacio-md);
+}
+
+.eje-panel.activo {
+	display: block;
+}
+
+.eje-panel.eje-1 { border-left-color: #7A1F3D; }
+.eje-panel.eje-2 { border-left-color: #A94464; }
+.eje-panel.eje-3 { border-left-color: #C97B93; }
+.eje-panel.eje-4 { border-left-color: #4A1428; }

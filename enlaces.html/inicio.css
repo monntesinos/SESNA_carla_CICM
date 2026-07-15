@@ -1,0 +1,87 @@
+/* ============================================================
+   ESTILOS DE INICIO
+   Estilos propios de la página de inicio del CICM.
+   ============================================================ */
+
+/* Sección de cifras del catálogo */
+#cifras-cicm {
+	text-align: center;
+}
+
+#cifras-cicm .numero-destacado {
+	color: var(--color-secundario);
+}
+
+.cuadricula-niveles {
+	margin-top: var(--espacio-md);
+}
+
+.nivel-tarjeta {
+	text-align: center;
+	border-top: 3px solid var(--color-secundario);
+}
+
+/* Sección: ¿Cómo usar este portal? */
+
+/* Llamado a la acción destacado hacia el buscador */
+.cta-buscador {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: center;
+	gap: var(--espacio-md);
+	margin-top: var(--espacio-md);
+	padding: var(--espacio-lg);
+	border-radius: var(--radio-borde);
+	background:
+		radial-gradient(circle at 100% 0%, rgba(201, 161, 90, 0.22), transparent 55%),
+		linear-gradient(135deg, var(--color-primario), var(--color-primario-oscuro));
+	box-shadow: var(--sombra-elevada);
+}
+
+.cta-buscador-icono {
+	flex-shrink: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 64px;
+	height: 64px;
+	border-radius: 50%;
+	background-color: rgba(255, 255, 255, 0.14);
+	color: var(--color-acento);
+}
+
+.cta-buscador-icono svg {
+	width: 30px;
+	height: 30px;
+}
+
+.cta-buscador-texto {
+	flex: 1 1 320px;
+}
+
+.cta-buscador-texto h3 {
+	color: var(--color-blanco);
+	margin-bottom: 0.3rem;
+}
+
+.cta-buscador-texto p {
+	color: var(--color-fondo-alterno);
+	margin-bottom: 0;
+}
+
+.cta-buscador-boton {
+	flex-shrink: 0;
+	background-image: none;
+	background-color: var(--color-blanco);
+	color: var(--color-primario);
+	font-size: var(--texto-base);
+	padding: 1rem 2.25rem;
+	box-shadow: none;
+}
+
+.cta-buscador-boton:hover {
+	background-image: none;
+	background-color: var(--color-fondo-alterno);
+	color: var(--color-primario-oscuro);
+	transform: translateY(-2px);
+}
